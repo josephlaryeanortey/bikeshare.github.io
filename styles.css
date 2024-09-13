@@ -1,0 +1,147 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+header .logo img {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    background: url('https://i.ibb.co/wsBr2fq/pngimg-com-bicycle-PNG5368.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.search-form input, .search-form button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    background-color: #f5c23c;
+    color: #333;
+    border: none;
+}
+
+.fleet {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.fleet h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.fleet-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fleet .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.fleet .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.fleet .card button {
+    background-color: #f5c23c;
+    color: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .fleet-cards {
+        flex-direction: column;
+    }
+
+    .hero .content h1 {
+        font-size: 32px;
+    }
+}
